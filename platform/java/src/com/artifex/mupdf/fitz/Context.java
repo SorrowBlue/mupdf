@@ -32,13 +32,13 @@ public class Context
 {
 	// Make sure to initialize inited before calling
 	// init() from the static block below.
-	private static boolean inited = false;
+	private static boolean inited = true;
 
 	static {
 		init();
 	}
 
-	private static native int initNative();
+	static native int initNative();
 
 	public static void init() {
 		if (!inited) {
