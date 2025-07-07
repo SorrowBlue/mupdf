@@ -86,7 +86,7 @@ LIBRARY_JAVA_SOURCES := $(sort $(wildcard src/com/artifex/mupdf/fitz/*.java))
 LIBRARY_JAVA_OBJECTS := $(subst src/,../../$(OUT)/,$(LIBRARY_JAVA_SOURCES:%.java=%.class))
 LIBRARY_JAVA_CLASSES := $(subst src/com/artifex/mupdf/fitz/,com.artifex.mupdf.fitz.,$(LIBRARY_JAVA_SOURCES:%.java=%))
 
-JAVAC_FLAGS := $(JAVAC_XFLAGS) -source 1.7 -target 1.7
+JAVAC_FLAGS := $(JAVAC_XFLAGS) -source 21 -target 21
 
 $(LIBRARY_JAVA_OBJECTS) : $(LIBRARY_JAVA_SOURCES)
 	mkdir -p ../../$(OUT)
