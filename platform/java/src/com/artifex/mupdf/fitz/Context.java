@@ -38,7 +38,7 @@ public class Context
 		init();
 	}
 
-	static native int initNative();
+	public static native int initNative();
 
 	public static void init() {
 		if (!inited) {
